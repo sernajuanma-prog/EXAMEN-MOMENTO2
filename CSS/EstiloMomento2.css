@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 5px;
+    background: linear-gradient(to right, #F29C50, #d57979);
+    color: rgb(19, 18, 18);
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 5%;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/035/796/334/small/ai-generated-an-aesthetic-studio-coffee-shop-interior-featuring-a-coffee-cup-and-plant-free-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    color:  #F5F5DC;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 50%;
+}
+.h1 {
+    color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 5%;
+    background: linear-gradient(to right, #d7ccc8, #bcaaa4);
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #d79b7c;
+}
+
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 45px 7%;
+    background: linear-gradient(to left, #b37d62, #d7ccc8);
+}
+
+.producto-item {
+    text-align: center;
+}
+
+.producto-item img {
+    border-radius: 35%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5%;
+    background: linear-gradient(to right, #6f4e37, #c4a484);
+    color: white;
+    gap: 20px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 5%;
+    background: linear-gradient(to right, #4a2d2d, #424242);
+    color: white;
+}
+
+.redes a {
+    text-decoration: none;  
+    color: #f5f5dc;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+
+
+.boton {
+    padding: 10px 25px;
+    background-color: #3e2723;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.boton:hover {
+    background-color: #5d4037;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .hero, .beneficios, .productos, .Encabezado, .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero-contenido { max-width: 100%; 
+        align-items: center;
+    }
+}
